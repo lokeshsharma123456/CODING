@@ -1,0 +1,27 @@
+22
+841 315 752 544 437 646 165 718 773 798 872 329 602 726 687 476 664 631 672 474 724 313
+2
+
+131203071 738050652 84 5
+
+4
+1 3 2 1
+0
+5
+1 3 2 4 5
+2
+
+
+
+int helper(int a, int b)
+{
+    if (a <= b)
+        return 0;
+    else
+        return 1 + helper(a / 2, b);
+}
+
+int carpetBox(int a, int b, int c, int d)
+{
+    return min(helper(a, c) + helper(b, d) , helper(a, d) + helper(b, c));
+}

@@ -1,0 +1,13 @@
+3
+zyx
+wvu
+tsr
+
+
+ ADOBECODEBANC  ABC
+ TOTMTAT  TAT
+ a a
+ a aa
+ ab a
+
+  

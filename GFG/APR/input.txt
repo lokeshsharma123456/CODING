@@ -1,0 +1,35 @@
+1 2 3 4 5 -1
+4 3 5 1 2 -1
+
+
+4
+1 3    
+2 3    
+1 2    
+4 4  
+
+
+
+131203071 738050652 84 5
+
+4
+1 3 2 1
+0
+5
+1 3 2 4 5
+2
+
+
+
+int helper(int a  int b)
+ 
+    if (a <= b)
+        return 0;
+    else
+        return 1 + helper(a / 2  b);
+ 
+
+int carpetBox(int a  int b  int c  int d)
+ 
+    return min(helper(a  c) + helper(b  d)   helper(a  d) + helper(b  c));
+ 
